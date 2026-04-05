@@ -1,0 +1,36 @@
+{
+  "name": "urbangreenbackend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node -r dotenv/config server.js",
+    "start": "node server.js",
+    "simulate:sensor": "node -r dotenv/config scripts/simulate-sensor-data.js",
+    "build:place-ids": "node scripts/build-park-google-place-ids.js --write",
+    "build:place-ids:dry": "node scripts/build-park-google-place-ids.js --dry-run --limit=5",
+    "invalidate-green-zones-cache": "node -r dotenv/config scripts/invalidate-green-zones-cache.js",
+    "check:google-env": "node scripts/check-google-backend-env.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Urban Green MVP backend API",
+  "engines": {
+    "node": "20.x"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^2.2.2",
+    "cors": "^2.8.6",
+    "dotenv": "^16.4.5",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.3.1",
+    "google-auth-library": "^9.14.1",
+    "jsonwebtoken": "^9.0.2",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.16",
+    "pg": "^8.20.0",
+    "resend": "^4.8.0",
+    "sqlite3": "^5.1.7"
+  }
+}
