@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Urban Green Backend
 
 API REST para la app Urban Green: autenticación (PostgreSQL), sensores/dispositivos, clima, identificación de plantas (Gemini), zonas verdes en Hermosillo (OpenStreetMap / Overpass + opcional Geoapify y Foursquare) y fotos de parques vía Google Places.
@@ -165,3 +166,7 @@ Si el repositorio incluye `openapi.json`, puede estar desactualizado respecto a 
 ## Documentación histórica
 
 Secciones antiguas sobre Netlify, `/devices/register` o `/sensor-history` pueden no coincidir con el código actual; usar la tabla de rutas de este README.
+=======
+# iaurbangreen
+una ia y ya prototipo 
+>>>>>>> f88fdefe2a9515154c2ba05bf864d7c88430274e
